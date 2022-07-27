@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos de order</title>
+    <style>
+        .container{
+            display: flex;
+            max-width: 350px;
+            border: 2px solid black;
+        }
+        .item{
+            flex: 1;
+            background: brown;
+            color: white;
+            text-align: center;
+            font-size: 24px;
+            margin: 5px;
+        }
+        .item2{
+            flex: 1;
+            background: black;
+            color: white;
+            text-align: center;
+            font-size: 24px;
+            margin: 5px;
+        }
+        .or-1{
+            order: 1;
+        }
+        .or-2{
+            order: 2;
+        }
+        .or-3{
+            order: 3;
+        }
+        .or-4{
+            order: 4;
+        }
+        .or-5{
+            order: 5;
+        }
+        .column{
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="item">order</h1>
+    <p class="item2">row</p>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">BB</div>
+        <div class="item">CCC</div>
+        <div class="item">DDDD</div>
+        <div class="item">EEEEE</div>
+    </div>
+
+    <h1 class="item ">ORDERS DIFERANTES</h1>
+    <p class="item2">column</p>
+    <div class="container column">
+        <div class="item or-4">A</div>
+        <div class="item or-2">BB</div>
+        <div class="item or-5">CCC</div>
+        <div class="item or-3">DDDD</div>
+        <div class="item or-1">EEEEE</div>
+    </div>
+</body>
+</html>

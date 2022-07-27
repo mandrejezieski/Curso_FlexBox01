@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamento de align-content</title>
+    <style>
+        .container{
+            height: 500PX;
+            max-width: 400PX;
+            display: flex;
+            flex-wrap: wrap;
+            border: 2px solid red;
+        }
+
+        .item{
+            background-color: greenyellow;
+            margin: 5px;
+            padding: 0 5px;
+            flex: 1;
+            text-align: center;
+            color: black;
+            border: 2px solid blue;
+        }
+        .stretch{
+            align-content: stretch;
+        }
+        .center{
+            align-content: center;
+        }
+        .flex-start{
+            align-items: flex-start;
+        }
+        .flex-end{
+            align-items: flex-end;
+        }
+        .space-between{
+            align-content: space-between;
+        }
+        .space-around{
+            align-content: space-around;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="item">align-content</h1>
+    <h1>align-content stretch: padrão</h1>
+    <div class="container stretch">
+        <div class="item">Lorem ipsum dolor, sit amet cdsfsdfsdfsdfsdf</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur a </div>
+        <div class="item">Lorem ipsum dolor, sit amet consecfdfdfdffdfdfdf</div>
+        <div class="item">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima quisquam sdfsdfsdfsdf </div>
+        <div class="item">Lorem ipsum dolor,dsfsdfdsfdsfsd  </div>
+        <div class="item">Lorem ipsum dolor, fsdfsdfsdfsdfsd </div>
+        <div class="item">Lorem ipsum dolor,  </div>
+    </div>
+
+    <h1>align-content center</h1>
+    <div class="container center">
+        <div class="item">Lorem ipsum dolor, sit amet cdsfsdfsdfsdfsdf</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur a </div>
+        <div class="item">Lorem ipsum dolor, sit amet consecfdfdfdffdfdfdf</div>
+        <div class="item">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima quisquam sdfsdfsdfsdf </div>
+        <div class="item">Lorem ipsum dolor,dsfsdfdsfdsfsd  </div>
+        <div class="item">Lorem ipsum dolor, fsdfsdfsdfsdfsd </div>
+        <div class="item">Lorem ipsum dolor,  </div>
+    </div>
+
+    <h1>align-content flex-start</h1>
+    <div class="container flex-start">
+        <<div class="item">Lorem ipsum dolor, sit amet cdsfsdfsdfsdfsdf</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur a </div>
+        <div class="item">Lorem ipsum dolor, sit amet consecfdfdfdffdfdfdf</div>
+        <div class="item">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima quisquam sdfsdfsdfsdf </div>
+        <div class="item">Lorem ipsum dolor,dsfsdfdsfdsfsd  </div>
+        <div class="item">Lorem ipsum dolor, fsdfsdfsdfsdfsd </div>
+        <div class="item">Lorem ipsum dolor,  </div>
+    </div>
+
+    <h1>align-content flex-end</h1>
+    <div class="container flex-end">
+        <div class="item">Lorem ipsum dolor, sit amet cdsfsdfsdfsdfsdf</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur a </div>
+        <div class="item">Lorem ipsum dolor, sit amet consecfdfdfdffdfdfdf</div>
+        <div class="item">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima quisquam sdfsdfsdfsdf </div>
+        <div class="item">Lorem ipsum dolor,dsfsdfdsfdsfsd  </div>
+        <div class="item">Lorem ipsum dolor, fsdfsdfsdfsdfsd </div>
+        <div class="item">Lorem ipsum dolor,  </div>
+    </div>
+
+    <h1>align-content space-between</h1>
+    <div class="container space-between">
+        <div class="item">Lorem ipsum dolor, sit amet cdsfsdfsdfsdfsdf</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur a </div>
+        <div class="item">Lorem ipsum dolor, sit amet consecfdfdfdffdfdfdf</div>
+        <div class="item">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima quisquam sdfsdfsdfsdf </div>
+        <div class="item">Lorem ipsum dolor,dsfsdfdsfdsfsd  </div>
+        <div class="item">Lorem ipsum dolor, fsdfsdfsdfsdfsd </div>
+        <div class="item">Lorem ipsum dolor,  </div>
+    </div>
+
+    <h1>align-content space-around</h1>
+    <div class="container space-around">
+        <div class="item">Lorem ipsum dolor, sit amet cdsfsdfsdfsdfsdf</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur a </div>
+        <div class="item">Lorem ipsum dolor, sit amet consecfdfdfdffdfdfdf</div>
+        <div class="item">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima quisquam sdfsdfsdfsdf </div>
+        <div class="item">Lorem ipsum dolor,dsfsdfdsfdsfsd  </div>
+        <div class="item">Lorem ipsum dolor, fsdfsdfsdfsdfsd </div>
+        <div class="item">Lorem ipsum dolor,  </div>
+    </div>
+</body>
+</html>

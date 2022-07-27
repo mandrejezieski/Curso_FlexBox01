@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos de align itens</title>
+    <style>
+        .container{
+            max-width: 500px;
+            border: 2px solid red;
+            display: flex;
+        }
+        .item{
+            background-color: blue;
+            margin: 30px;
+            color: aqua;
+            text-align: center;
+            flex: 1;
+        }
+        .flex{
+            flex: 1;
+        }
+        .center{
+            align-items: center;
+        }
+        .stretch{
+            align-items: stretch;
+        }
+        .flex-start{
+            align-items: flex-start;
+        }
+        .flex-end{
+            align-items: flex-end;
+        }
+        .baselina{
+            align-items: baseline;
+        }
+        .column{
+            flex-direction: column;
+        }
+        .central{
+            height: 500px;
+            justify-content: center;
+        }
+        .central .item{
+            flex: 0;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="item">row</h1>
+    <h1>alig-center</h1>
+    <section class="container center flex">
+        <div class="item">one</div>
+        <div class="item">item 2</div>
+        <div class="item">outro item</div>  
+        <div class="item">mais um item</div>  
+        <div class="item">mais um item</div> 
+    </section>
+
+    <h1>alig-stretch</h1>
+    <section class="container stretch flex">
+        <div class="item">one</div>
+        <div class="item">item 2</div>
+        <div class="item">outro item</div>  
+        <div class="item">mais um item</div>  
+        <div class="item">mais um item</div> 
+    </section>
+
+    <h1>alig-flex-start</h1>
+    <section class="container flex-start flex">
+        <div class="item">one</div>
+        <div class="item">item 2</div>
+        <div class="item">outro item</div>  
+        <div class="item">mais um item</div>  
+        <div class="item">mais um item</div> 
+    </section>
+
+    <h1>alig-flex-end</h1>
+    <section class="container flex-end flex">
+        <div class="item">one</div>
+        <div class="item">item 2</div>
+        <div class="item">outro item</div>  
+        <div class="item">mais um item</div>  
+        <div class="item">mais um item</div> 
+    </section>
+
+    <h1>alig-baseline</h1>
+    <section class="container baseline flex"> 
+        <div class="item"><br>one</div>
+        <div class="item">item 2</div>
+        <div class="item">outro item</div>  
+        <div class="item">mais um item,mais um item, mais um item, mais um item</div>  
+        <div class="item">mais um item</div> 
+    </section>
+
+    <h1 class="item">column</h1>
+    <h1>alig-flex-start column</h1>
+    <section class="container flex-start column">
+        <div class="item">one</div>
+        <div class="item">item 2</div>
+        <div class="item">outro item</div>  
+        <div class="item">mais um item</div>  
+        <div class="item">mais um item</div> 
+    </section>
+
+    <h1>alig-flex-end column</h1>
+    <section class="container flex-end column">
+        <div class="item">one</div>
+        <div class="item">item 2</div>
+        <div class="item">outro item</div>  
+        <div class="item">mais um item</div>  
+        <div class="item">mais um item</div> 
+    </section>
+
+    <h1>alig-center column</h1>
+    <section class="container center  column">
+        <div class="item">one</div>
+        <div class="item">item 2</div>
+        <div class="item">outro item</div>  
+        <div class="item">mais um item</div>  
+        <div class="item">mais um item</div> 
+    </section>
+
+    <h1>alig-stretch column</h1>
+    <section class="container stretch column">
+        <div class="item">one</div>
+        <div class="item">item 2</div>
+        <div class="item">outro item</div>  
+        <div class="item">mais um item</div>  
+        <div class="item">mais um item</div> 
+    </section>
+
+    <h1>alig-baseline column</h1>
+    <section class="container baseline column"> 
+        <div class="item"><br>one</div>
+        <div class="item">item 2</div>
+        <div class="item">outro item</div>  
+        <div class="item">mais um item</div>  
+        <div class="item">mais um item</div> 
+    </section>
+
+    <h1>central</h1>
+    <section class="container central center"> 
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi sit ratione quos eaque ducimus veritatis odio, iste quibusdam sed natus earum cupiditate facere doloremque voluptates eos suscipit assumenda voluptatibus hic?
+        </div>
+    </section>
+
+    <h1>central flex zerado</h1>
+    <section class="container central  central-item"> 
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi sit ratione quos eaque ducimus v hic?
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos de  align-self</title>
+    <style>
+        .container{
+            display: flex;
+            max-width: 350px;
+            margin-bottom: 10px;
+            border: 2px solid black;
+        }
+        .auto{
+            align-self: auto;
+        }
+        .item{
+            background: pink;
+            color: white;
+            margin: 10px;
+            text-align: center;
+            font-size: 24px;
+        }
+        .align-cont{
+            align-self: auto;
+        }
+        .center{
+            text-align: center;
+        }
+        .start{
+            text-align: flex-start;
+        }
+        .end{
+            text-align: flex-end;
+        }
+        .stretch{
+            align-self: stretch;
+        }
+        .baseline{
+            align-self: baseline;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="item">align-self</h1>
+    <div class="container">
+        <div class="item auto">AAA</div>
+        <div class="item auto">123</div>
+        <div class="item auto">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        <div class="item auto">item 4</div>
+    </div>
+    <div class="container">
+        <div class="item">AAA</div>
+        <div class="item">123</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        <div class="item">item 4</div>
+    </div>
+    <div class="container">
+        <div class="item">AAA</div>
+        <div class="item">123</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        <div class="item">item 4</div>
+    </div>
+</body>
+</html>
